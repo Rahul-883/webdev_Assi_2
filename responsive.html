@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive layout</title>
+    <style>
+        
+        .container{
+            border: 1px solid black;
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+        #leftbox{
+            background-color: aquamarine;
+            border: 1px solid blueviolet;
+            width: 400%;
+            height: 250px;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        #rightbox{
+            background-color: rgb(13, 46, 35);
+            border: 1px solid rgb(205, 162, 245);
+            width: 400%;
+            height: 250px;
+            margin: 3px;
+            padding: 3px;
+        }
+        .box1{
+            background-color: rgb(13, 46, 13);
+            border: 1px solid rgb(245, 162, 190);
+            width: 90%;
+            height: 100px;
+            margin: 3px;
+            padding: 3px
+        }
+
+        .box2{
+            background-color: rgb(13, 46, 13);
+            border: 1px solid rgb(245, 162, 190);
+            width: 90%;
+            height: 100px;
+            margin: 3px;
+            padding: 3px
+        }
+        .box{
+            background-color: rgb(13, 46, 13);
+            border: 1px solid rgb(245, 162, 190);
+            width: 90%;
+            height: 180px;
+            margin: 3px;
+            padding: 3px
+        }
+        @media (max-width: 480px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        @media (max-width:720px ) {
+            .box{
+                background-color: black;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div id="leftbox">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+
+<div id="rightbox">
+    <div class="box"></div>
+</div>
+
+    </div>
+    
+</body>
+</html>
